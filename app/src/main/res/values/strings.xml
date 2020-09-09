@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Drawing Demo</string>
+
+    <string-array name="mode_array">
+        <item>Sketchy mode</item>
+        <item>Fractal mode</item>
+        <item>Points Mode</item>
+        <item>Averaging Mode</item>
+        <item>Geometry Mode</item>
+        <item>Bezier Mode</item>
+        <item>Voronoi Mode</item>
+    </string-array>
+</resources>
