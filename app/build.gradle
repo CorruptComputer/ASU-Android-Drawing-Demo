@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "xyz.gupton.nickolas.asu.drawingdemo"
@@ -23,5 +23,13 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "CorruptComputer_ASU-Android-Drawing-Demo"
+        property "sonar.organization", "corruptcomputer"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
